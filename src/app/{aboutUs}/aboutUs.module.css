@@ -1,0 +1,59 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  min-height: 360px;
+}
+
+.left {
+  background: #2f2f2f;
+  color: #fff;
+  padding: 64px 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 48px;
+  margin: 0 0 24px 0;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.lead {
+  max-width: 520px;
+  line-height: 1.7;
+  color: #e6e6e6;
+  font-size: 16px;
+  margin: 0;
+}
+
+.right {
+  position: relative;
+  overflow: hidden;
+}
+
+.imgWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+}
+
+.img {
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    padding: 48px 32px;
+    text-align: left;
+  }
+  .imgWrap {
+    min-height: 240px;
+  }
+}

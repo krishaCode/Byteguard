@@ -34,6 +34,13 @@
   grid-row-start: 2;
 }
 
+/* center-aligned content wrapper used by src/app/page.jsx */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;
