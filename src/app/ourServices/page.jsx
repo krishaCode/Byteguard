@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 import styles from './page.module.css'
 
-const sampleText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`
+const sampleText = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s.`
 
 const cards = [
   {

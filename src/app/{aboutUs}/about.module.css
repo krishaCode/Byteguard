@@ -1,0 +1,62 @@
+.heroAbout {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('/about.png');
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heroAbout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%);
+  pointer-events: none;
+}
+
+.heroAbout .content {
+  position: relative;
+  z-index: 1;
+  width: 48%;
+  padding: 56px 6vw;
+  color: #fff;
+}
+
+.heroAbout h1 {
+  margin: 0 0 18px 0;
+  font-size: 40px;
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.heroAbout p {
+  max-width: 560px;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+  margin: 0 0 26px 0;
+}
+
+.heroAbout .cta {
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  padding: 14px 28px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+}
+
+@media (max-width: 880px) {
+  .heroAbout { flex-direction: column; padding: 36px 20px; min-height: auto; }
+  .heroAbout .content { width: 100%; padding: 28px 20px; }
+  .heroAbout h1 { font-size: 28px; }
+}
