@@ -4,6 +4,7 @@ import Header from "./{header}/header";
 import AboutUs from "./{aboutUs}/aboutUs";
 import OurServices from "./{ourServices}/OurServices";
 import Projects from "./{Projects}/projects";
+import Contact from "./contact/contact";
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutUs />
       <OurServices />
       <Projects />
+      <Contact />
     </div>
     </>
   );

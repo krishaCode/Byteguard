@@ -1,11 +1,9 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import style from './pCard.module.css'
 
-/**
- * PCard - presentational project/news card
- * Props: { title, date, author, summary, imgSrc, link }
- */
+
 export default function PCard({
 	title = "Untitled",
 	date = "",
@@ -31,7 +29,11 @@ export default function PCard({
 				</div>
 				<h2 className={style.newsTitle}>{title}</h2>
 				<p className={style.newsSummary}>{summary}</p>
-				<a href={link} target="_blank" rel="noopener noreferrer" className={style.readMore}>Read More</a>
+								{typeof link === 'string' && /^(https?:)?\/\//.test(link) ? (
+									<a href={link} target="_blank" rel="noopener noreferrer" className={style.readMore}>Read More</a>
+								) : (
+									<Link href={link} className={style.readMore}>Read More</Link>
+								)}
 			</div>
 		</article>
 	)

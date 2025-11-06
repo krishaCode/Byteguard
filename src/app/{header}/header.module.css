@@ -4,9 +4,6 @@
   min-height: 420px;
   padding: 0;
   box-sizing: border-box;
-  background-image: url('/header.png');
-  background-size: cover;
-  background-position: center right;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -26,6 +23,23 @@
   width: 48%;
   padding: 56px 6vw;
   color: #fff;
+}
+
+/* visual container for next/image fill */
+.visual {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bgImage {
+  /* next/image with fill will position the img absolutely; ensure cover and right focal point */
+  object-fit: cover;
+  object-position: right center;
+  width: 100%;
+  height: 100%;
 }
 
 .heroAbout h1 {

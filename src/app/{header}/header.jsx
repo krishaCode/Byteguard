@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 import style from './header.module.css'
 
 function header() {
@@ -9,9 +11,11 @@ function header() {
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a
           </p>
-          <a className={style.cta} href="#contact">CONTACT US</a>
+          <Link className={style.cta} href="#contact">CONTACT US</Link>
         </div>
-        <div className={style.visual} aria-hidden="true" />
+        <div className={style.visual} aria-hidden="true">
+          <Image src="/header.png" alt="Header visual" fill className={style.bgImage} priority />
+        </div>
       </section>
 
   )

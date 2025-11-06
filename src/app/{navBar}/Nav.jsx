@@ -1,23 +1,27 @@
 'use client';
 
 import React from "react";
+import Link from 'next/link'
+import Image from 'next/image'
 import styles from "./nav.module.css";
 
 export default function Nav() {
     return (
         <nav className={styles.nav}>
             <span id="logo" className={styles.logo}>
-                <img
-                    src="https://png.pngtree.com/png-clipart/20230106/ourmid/pngtree-pet-shop-house-png-image_6553432.png"
-                    alt=""
+                <Image
+                    src=""
+                    alt="Byteguard"
+                    width={40}
+                    height={40}
                 />
-                WePet
+                Byteguard
             </span>
             <ul id="links" className={styles.links}>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><Link href="#">Home</Link></li>
+                <li><Link href="#about">About</Link></li>
+                <li><Link href="#services">Services</Link></li>
+                <li><Link href="#contact">Contact</Link></li>
             </ul>
             
 

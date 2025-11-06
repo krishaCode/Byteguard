@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import style from './footer.module.css'
 
 function Footer() {
@@ -14,31 +15,31 @@ function Footer() {
         </p>
         <ul className={style.sm}>
           <li>
-            <a href="#"><i className="lab la-youtube" /></a>
+            <Link href="#"><i className="lab la-youtube" /></Link>
           </li>
           <li>
-            <a href="#"><i className="lab la-facebook" /></a>
+            <Link href="#"><i className="lab la-facebook" /></Link>
           </li>
           <li>
-            <a href="#"><i className="lab la-instagram" /></a>
+            <Link href="#"><i className="lab la-instagram" /></Link>
           </li>
           <li>
-            <a href="#"><i className="lab la-twitter" /></a>
+            <Link href="#"><i className="lab la-twitter" /></Link>
           </li>
           <li>
-            <a href="#"><i className="lab la-github" /></a>
+            <Link href="#"><i className="lab la-github" /></Link>
           </li>
         </ul>
         <ul className={style.links}>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link href="#">Home</Link></li>
+          <li><Link href="#">About</Link></li>
+          <li><Link href="#">Services</Link></li>
+          <li><Link href="#">Portfolio</Link></li>
+          <li><Link href="#">Contact</Link></li>
         </ul>
       </div>
       <p className={style.copyright}>
-        &copy; <span id="year"></span> ArsenTech | All Rights Reserved
+        &copy; <span id="year"></span>Byteguard Technology | All Rights Reserved
       </p>
     </footer>
   )

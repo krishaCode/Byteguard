@@ -15,7 +15,7 @@ const cards = [
   {
     title: 'ABOUT US',
     text: sampleText,
-    imgSrc: './lock.png',
+    imgSrc: '/lock.png',
     reverse: true,
     textBg: '#ffffff',
     textColor: '#111'
@@ -23,7 +23,7 @@ const cards = [
   {
     title: 'ABOUT US',
     text: sampleText,
-    imgSrc: './network.jpg',
+    imgSrc: '/network.jpg',
     reverse: false,
     textBg: '#2f3640',
     textColor: '#fff'
@@ -31,7 +31,7 @@ const cards = [
   {
     title: 'ABOUT US',
     text: sampleText,
-    imgSrc: './wifi.jpg',
+    imgSrc: '/wifi.jpg',
     reverse: true,
     textBg: '#ffffff',
     textColor: '#111'
